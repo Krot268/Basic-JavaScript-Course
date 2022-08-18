@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо реализовать четыре функции, каждая функция должна принимать по два
+числа и выполнять одну из операций (каждая функция выполняет одну из них):
+1. Сложение
+2. Разность
+3. Умножение
+4. Деление
+
+Необходимо сделать так, чтобы функция вернула число, например выражение
+`console.log(sum(2, 6));` должно вывести число 8 в консоль (sum - функция
+сложения в данном примере, ваши названия функций могут отличаться).
+
+Округлять значения, которые возвращают функции не нужно, однако, обратите
+внимание на разность, функция должна вычесть из большего числа меньшее, либо
+вернуть 0, если числа равны.
+
+Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать
+не нужно.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+  <script>
+    "use strict";
+
+    let a = +prompt(`Введите первое число`);
+    let b = +prompt(`Введите второе число`);
+
+    function return_number_addition() {
+      const result = (a + b);
+      return result
+    }
+
+    let addition = return_number_addition(); // jsdoc https://jsdoc.app/
+    console.log(addition);
+
+    function return_number_difference() {
+      const result = (a - b);
+      return result
+    }
+
+    let difference = return_number_difference(); // jsdoc https://jsdoc.app/
+    console.log(difference);
+
+    function return_number_multiplication() {
+      const result = (a * b);
+      return result
+    }
+
+    let multiplication = return_number_multiplication(); // jsdoc https://jsdoc.app/
+    console.log(multiplication);
+
+    function return_number_division() {
+      const result = (a / b);
+      return result
+    }
+
+    let division = return_number_division(); // jsdoc https://jsdoc.app/
+    console.log(division);
+
+  </script>
+</body>
+
+</html>
